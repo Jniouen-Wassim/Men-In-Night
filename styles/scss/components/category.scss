@@ -1,0 +1,32 @@
+#category {
+  margin-top: 5vh;
+
+  .allButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 20%;
+    .btnCategory {
+      width: 100px;
+      margin: 20px;
+      padding: 6px;
+      text-align: center;
+    }
+    .active {
+      width: 100px;
+      text-align: center;
+      background: rgb(245, 59, 3);
+    }
+  }
+
+  .containerText {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+
+@media screen and (max-width: 855px) {
+  #category .allButton{
+    margin: 0;
+  }
+}
