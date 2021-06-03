@@ -5,11 +5,14 @@ import {
   garnitures,
   sauces,
   supplements,
+  dessertsLeft,
+  dessertsRight,
 } from './AllArray_menu'
 
 import Pates from './components/Pates/Pates'
 import Boissons from './components/Boissons/Boissons'
 import Sandwich from './components/Sandwich/Sandwich'
+import Desserts from './components/Desserts/Desserts'
 
 export default function Menu() {
   const pates_ = pates.map((pates, index) => {
@@ -33,6 +36,13 @@ export default function Menu() {
     return <Sandwich data={supplements} key={index} />
   })
 
+  const dessertsLeft_ = dessertsLeft.map((dessertsLeft, index) => {
+    return <Desserts data={dessertsLeft} key={index} />
+  })
+  const dessertsRight_ = dessertsRight.map((dessertsRight, index) => {
+    return <Desserts data={dessertsRight} key={index} />
+  })
+
   return (
     <div id='menu'>
       <div className='top'>
@@ -47,7 +57,7 @@ export default function Menu() {
         </div>
       </div>
 
-      <div className='bottom'>
+      <div className='middle'>
         <h2>Sandwich à 4.50€</h2>
         <div className='contentSandwich'>
           <div className='divType'>
@@ -66,6 +76,14 @@ export default function Menu() {
             <h3>Supplements</h3>
             {supplements_}
           </div>
+        </div>
+      </div>
+
+      <div className='bottom'>
+        <h2>Desserts</h2>
+        <div className='contentDesserts'>
+          <div className='left'>{dessertsLeft_}</div>
+          <div className='right'>{dessertsRight_}</div>
         </div>
       </div>
     </div>

@@ -1,25 +1,24 @@
 #menu {
-  border: 1px solid white;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
   .top {
     display: flex;
-    padding: 10px;
-
     .contentPates,
     .contentBoissons {
       width: 100%;
       text-align: start;
-      padding: 20px 10%;
-      margin-right: 2%;
+      padding: 0px 10%;
+
       h2 {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom:15px;
+        // background: rgb(146, 35, 35);
       }
       span {
         display: flex;
         justify-content: space-between;
         line-height: 2;
+        p {
+          font-size: 20px;
+        }
       }
     }
 
@@ -27,15 +26,14 @@
       border-left: 2px solid rgb(255, 255, 255);
       display: inline-block;
       height: 15vh;
-      margin: 50px 0;
+      margin: 40px 0;
     }
   }
 
-  .bottom {
-    background: rgba(4, 158, 56, 0.61);
+  .middle {
     h2 {
-      padding: 10px 0;
-      background: rgb(107, 13, 13);
+      padding: 10px 0px;
+      // background: rgb(107, 13, 13);
     }
     .contentSandwich {
       display: flex;
@@ -44,7 +42,8 @@
         border: 2px solid black;
         h3 {
           padding: 5px;
-          background: rgb(146, 35, 35);
+          margin-bottom:15px;
+          // background: rgb(146, 35, 96);
         }
         .type {
           display: flex;
@@ -58,22 +57,89 @@
       }
     }
   }
+
+  .bottom {
+    h2 {
+      padding: 10px 0;
+      text-align: center;
+      // background: rgb(51, 107, 13);
+    }
+
+    .contentDesserts {
+      display: flex;
+      width: 100%;
+
+      .left,
+      .right {
+        width: 100%;
+        text-align: start;
+        padding: 0px 10%;
+
+        span {
+          display: flex;
+          justify-content: space-between;
+          line-height: 2;
+          // background: rgb(140, 15, 156);
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 855px) {
   #menu {
-    .top,
-    .bottom {
+    .top {
+      flex-wrap: wrap;
+      margin: 0 20px;
+      .contentPates,
+      .contentBoissons {
+        padding: 0;
+      }
+      .vertical-line {
+        display: none;
+      }
+    }
+
+    .middle {
       flex-wrap: wrap;
       margin: 0 20px;
       .vertical-line {
         display: none;
       }
-      .contentSandwich{
+      .contentSandwich {
         flex-direction: column;
         background: rgb(172, 162, 162);
         .divType {
           width: 100%;
+        }
+      }
+    }
+
+    .bottom {
+      margin: 0 20px;
+      h2 {
+        text-align: center;
+      }
+
+      .contentDesserts {
+        flex-wrap: wrap;
+        width: 100%;
+
+        .left,
+        .right {
+          width: 100%;
+          text-align: start;
+          padding: 0;
+
+          span {
+            display: flex;
+            justify-content: space-between;
+            line-height: 2;
+            background: rgb(140, 15, 156);
+          }
         }
       }
     }
