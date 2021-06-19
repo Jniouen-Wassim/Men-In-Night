@@ -1,28 +1,24 @@
 #menu {
-  border: 1px solid white;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
   .top {
     display: flex;
-    padding: 10px;
-
     .contentPates,
     .contentBoissons {
       width: 100%;
       text-align: start;
-      padding: 20px 10%;
-      margin-right: 2%;
-      h2 {
+      padding: 0px 10%;
+      h2 {      
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom:15px;
       }
       span {
         display: flex;
         justify-content: space-between;
         line-height: 2;
+        p {
+          font-size: 20px;
+        }
       }
     }
-
     .vertical-line {
       border-left: 2px solid rgb(255, 255, 255);
       display: inline-block;
@@ -31,26 +27,70 @@
     }
   }
 
-  .bottom {
-    background: rgba(4, 158, 56, 0.61);
+  .middle {
     h2 {
-      padding: 10px 0;
-      background: rgb(107, 13, 13);
+      padding: 20px 0px;
     }
     .contentSandwich {
+      padding: 0px 10%;
       display: flex;
       .divType {
         width: 25%;
-        border: 2px solid black;
         h3 {
-          padding: 5px;
-          background: rgb(146, 35, 35);
+          text-align: start;
+          margin-bottom:20px; 
+          width: 80%;
+          padding: 6px;
+          color: rgb(255, 255, 255, 0.5);
+          border: 1px solid #444;
+          border-radius: 3px;
+          background: rgba(255, 255, 255, 0.1);
+          box-shadow: inset rgba(0, 0, 0, 0.35) 2px 2px 12px;
+          -webkit-transition: all 0.7s;
+          -moz-transition: all 0.7s;
+          transition: all 0.7s;
+          &:hover{
+             color: #f5f5f5;
+             background-color: rgba(255, 255, 255, 0.24);
+          }      
         }
         .type {
           display: flex;
-          margin: 5px 10px;
+          margin: 5px 0px;
           justify-content: space-between;
           padding: 1px;
+          p {
+            font-size: 20px;
+          }
+        }
+
+        &:hover {
+          h3 {
+             color: #f5f5f5;
+             background-color: rgba(255, 255, 255, 0.24);
+          }      
+        }
+      }
+    }
+  }
+
+  .bottom {
+    h2 {
+      padding: 10px 0;
+      text-align: center;
+    }
+    .contentDesserts {
+      display: flex;
+      width: 100%;
+      .left,
+      .right {
+        width: 100%;
+        text-align: start;
+        padding: 0px 10%;
+        span {
+          display: flex;
+          justify-content: space-between;
+          line-height: 2;
           p {
             font-size: 20px;
           }
@@ -62,18 +102,60 @@
 
 @media screen and (max-width: 855px) {
   #menu {
-    .top,
-    .bottom {
+    .top {
+      flex-wrap: wrap;
+      margin: 0 20px;
+      .contentPates,
+      .contentBoissons {
+        padding: 0;
+      }
+      .vertical-line {
+        display: none;
+      }
+    }
+
+    .middle {
       flex-wrap: wrap;
       margin: 0 20px;
       .vertical-line {
         display: none;
       }
-      .contentSandwich{
+      .contentSandwich {
+        width: 100%;
+        padding: 0;
         flex-direction: column;
-        background: rgb(172, 162, 162);
         .divType {
+          width: 100%;    
+          h3{
+            width: 100%;
+            text-align: center;
+            margin-top:20px;       
+          }
+          .type{
+            display:flex;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      margin: 0 20px;
+      h2 {
+        text-align: center;
+      }
+      .contentDesserts {
+        flex-wrap: wrap;
+        width: 100%;
+        .left,
+        .right {
           width: 100%;
+          text-align: start;
+          padding: 0;
+          span {
+            display: flex;
+            justify-content: space-between;
+            line-height: 2;
+          }
         }
       }
     }
