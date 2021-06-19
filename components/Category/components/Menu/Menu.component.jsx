@@ -47,40 +47,51 @@ export default function Menu() {
     <div id='menu'>
       <div className='top'>
         <div className='contentPates'>
-          <h2>Pâtes</h2>
+          <h2 className='title'>Pâtes 🍜</h2>
           {pates_}
         </div>
+
         <span className='vertical-line'></span>
+
         <div className='contentBoissons'>
-          <h2>Boissons</h2>
+          <h2 className='title'>Boissons 🍷</h2>
           {boissons_}
         </div>
       </div>
 
       <div className='middle'>
-        <h2>Sandwich à 4.50€</h2>
+        <h2 className='title'> Sandwich à 4.50€ 🍔</h2>
+
         <div className='contentSandwich'>
           <div className='divType'>
             <h3>Viandes</h3>
+            <h4></h4>
             {viandes_}
           </div>
+
           <div className='divType'>
             <h3>Garnitures</h3>
+            <h4></h4>
             {garnitures_}
           </div>
+
           <div className='divType'>
             <h3>Sauces</h3>
+            <h4></h4>
             {sauces_}
           </div>
+
           <div className='divType'>
             <h3>Supplements</h3>
+            <h4></h4>
             {supplements_}
           </div>
         </div>
       </div>
 
       <div className='bottom'>
-        <h2>Desserts</h2>
+        <h2 className='title'>  Desserts 🍧</h2>
+
         <div className='contentDesserts'>
           <div className='left'>{dessertsLeft_}</div>
           <div className='right'>{dessertsRight_}</div>
