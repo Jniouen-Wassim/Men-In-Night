@@ -46,6 +46,7 @@ export default function Menu() {
   return (
     <div id='menu'>
       <div className='top'>
+
         <div className='contentPates'>
           <h2 className='title'>Pâtes 🍜</h2>
           {pates_}
@@ -86,6 +87,7 @@ export default function Menu() {
             <h4></h4>
             {supplements_}
           </div>
+          
         </div>
       </div>
 
