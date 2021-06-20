@@ -61,7 +61,7 @@ export default function Menu() {
       </div>
 
       <div className='middle'>
-        <h2 className='title'> Sandwich à 4.50€ 🍔</h2>
+        <h2 className='title'> Sandwichs à 4.50€ 🍔</h2>
 
         <div className='contentSandwich'>
           <div className='divType'>

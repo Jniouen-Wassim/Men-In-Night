@@ -10,11 +10,11 @@ export const dessertsLeft = [
 ]
 export const dessertsRight = [
     {
-        dessert: "Crèpes nature",
+        dessert: "Crèpe nature",
         prix: "3.50€",
     },
     {
-        dessert: "Crèpes sucre/Nutella",
+        dessert: "Crèpe sucre/Nutella",
         prix: "3.50€",
     },
 ]
