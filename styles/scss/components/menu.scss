@@ -48,11 +48,7 @@
           box-shadow: inset rgba(0, 0, 0, 0.35) 2px 2px 12px;
           -webkit-transition: all 0.7s;
           -moz-transition: all 0.7s;
-          transition: all 0.7s;
-          &:hover{
-             color: #f5f5f5;
-             background-color: rgba(255, 255, 255, 0.24);
-          }      
+          transition: all 0.7s;  
         }
         .type {
           display: flex;
@@ -134,6 +130,12 @@
           .type{
             display:flex;
           }
+          &:focus {
+          h3 {
+             color: #f5f5f5;
+             background-color: rgba(255, 255, 255, 0.24);
+          }      
+        }
         }
       }
     }
