@@ -1,0 +1,53 @@
+/*-------( Effect noir et blanc titre principal )------*/
+.linear-gradient-h1 {
+    background-color: rgb(202, 202, 202);
+    background-image: linear-gradient(110deg, #ffffff, #000000);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  
+/*-------( Effect ligne horizontal couleur dégradé )------*/
+  .title {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .title:before,
+  .title:after {
+    background-image: linear-gradient(360deg, #0b8db893, rgba(255, 255, 255, 0.507));
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 25%;
+  }
+  
+  .title:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  .title:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+  
+/*-------( Effect new color scroll bar )------*/
+  body::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #000000; 
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 5px;
+    border: 2px solid #000000; 
+  }

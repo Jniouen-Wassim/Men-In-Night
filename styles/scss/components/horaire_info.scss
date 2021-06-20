@@ -1,0 +1,71 @@
+#horaireInfo {
+    display: flex;
+    justify-content: space-around;
+    margin: 8vh 0;
+
+    .horaire,
+    .social {
+        width: 100%;
+        .infoLeft {
+            margin-top: 5vh;
+            p {
+                font-size: 20px;
+                line-height: 2;
+                strong {
+                    color: #f7f7f7e1;
+                }  
+                &:hover {
+                    strong {
+                        color: #0B8CB8;
+                    }
+                }
+            }
+            cursor: default;
+        }
+
+        .infoRight {
+            margin-top: 5vh;
+            justify-content: space-around;
+            display: flex;
+            .linkIcon {
+                display: flex;
+                align-items: center;
+                p {
+                    margin-left: 10px;
+                }
+                &:hover {
+                    p{color: #0B8CB8;}       
+                }
+                cursor: default;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                span p {
+                    margin-left: 10px;
+                    line-height: 1.3;
+
+                    &.p1:hover{
+                        color: #0B8CB8;    
+                    }
+                    &.p2:hover{
+                        color: #0B8CB8;    
+                    }
+                }
+            }
+        }
+        h2 {
+            font-size: 30px;
+        }
+       
+    }
+}
+
+@media screen and (max-width: 855px) {
+    #horaireInfo {
+        flex-wrap: wrap;
+        .child2{
+            padding-top: 8vh;
+        }
+    }
+}
