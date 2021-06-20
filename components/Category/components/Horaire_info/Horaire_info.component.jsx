@@ -13,10 +13,10 @@ export default function Horaire_info() {
         </div>
       </div>
       <div className='social'>
-        <h2 className='title'> Nous contacter 🔎</h2>
+        <h2 className='title child2'> Nous contacter 🔎</h2>
         <div className='infoRight'>
             <a className="linkIcon" href="#"><FaSnapchatSquare className="icon" size='50' color='white' /> <p>MENINNIGHT</p> </a>
-            <div><FaPhoneSquareAlt className="icon" size='50' color='white' /> <span><a href="tel:048-479-5830"> <p> 0484/79.58.30</p></a> <br /> <a href="tel:047-069-5090"><p>0470/69.50.90</p></a> </span></div>
+            <div><FaPhoneSquareAlt className="icon" size='50' color='white' /> <span><a href="tel:048-479-5830"> <p className="p1">• 0484/79.58.30</p></a> <a href="tel:047-069-5090"><p className="p2">• 0470/69.50.90</p></a> </span></div>
         </div>
       </div>
     </div>
