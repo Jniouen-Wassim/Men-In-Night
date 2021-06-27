@@ -1,3 +1,3 @@
-import Sandwich from './Sandwich'
+import Sandwich from './Sandwich.component'
 
 export default Sandwich ;

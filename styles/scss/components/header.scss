@@ -1,29 +1,87 @@
 /* ------(  Header  )------*/
-
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 2vh;
 
-  h1 {
-    position: relative;
-    z-index: 10;
-    font-family: 'Snippet', sans-serif;
-    font-size: 50px;
-    text-align: center;
-    .textIn {
-      margin-left: 50px;
-      font-weight: bold;
+  .logo {
+    margin-left: 36%;
+
+    h1 {
+      position: relative;
+      z-index: 10;
+      font-family: 'Snippet', sans-serif;
+      font-size: 50px;
+      text-align: center;
+
+      .textIn {
+        margin-left: 50px;
+        font-weight: bold;
+      }
+    }
+
+    img {
+      position: absolute;
+      z-index: 5;
+      margin-left: -45px;
+      top: 6vh;
+      object-fit: cover;
+      width: 150px;
+      height: 100px;
     }
   }
 
-  img {
-    position: absolute;
-    z-index: 5;
-    margin-left: -45px;
-    top: 6vh;
-    object-fit: cover;
-    width: 150px;
-    height: 100px;
+  main {
+    margin-top: 2vh;
+    min-width: 300px;
+
+    .linkHeader {
+      display: flex;
+      justify-content: center;
+
+      a {
+        padding: 0 5px;
+       
+      } 
+      
+        a:nth-child(1){
+          &:hover{
+            color: rgb(0, 195, 255);
+          }}
+        a:nth-child(2){
+          &:hover{
+            color: rgb(255, 51, 0);
+          }}
+        a:nth-child(3){
+          &:hover{
+            color: rgb(251, 255, 0);
+          }}
+       
+        
+    }
+
+    .btnWelcome {
+      padding-top: 40px;
+      text-align: center;
+      color: white;
+      h1{
+        margin-bottom: 15px;
+        
+      }
+      a{
+        font-family: 'Snippet', sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+      
+        padding: 6px;
+        color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        border: 1px solid rgb(32, 7, 173);
+        border-radius: 3px;
+        background: rgba(255, 255, 255, 0.959);
+        box-shadow: inset rgba(0, 0, 0, 0.35) 2px 2px 12px;
+        transition: all 0.7s;
+      }
+    }
   }
 }

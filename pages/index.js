@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
+
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import Header from '../components/Header'
 import Category from '../components/Category'
@@ -16,10 +17,17 @@ export default function Home() {
       <main>
        <Header />
        <Category />
-
       </main>
 
-     
     </div>
   )
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+      // Will be passed to the page component as props
+    },
+  };
 }

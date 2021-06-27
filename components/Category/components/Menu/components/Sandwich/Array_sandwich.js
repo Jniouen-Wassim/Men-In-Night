@@ -84,8 +84,8 @@ export const supplements = [
     typeFood: 'Olives',
     prix: '0.50€',
   },
-  // {
-  //   typeFood: 'Bacon',
-  //   prix: '1.00€',
-  // },
+  {
+    typeFood: 'Bacon de dinde',
+    prix: '1.00€',
+  },
 ]

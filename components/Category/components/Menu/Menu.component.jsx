@@ -1,18 +1,15 @@
 import {
   pates,
   boissons,
-  viandes,
-  garnitures,
-  sauces,
-  supplements,
   dessertsLeft,
   dessertsRight,
 } from './AllArray_menu'
 
-import Pates from './components/Pates/Pates'
-import Boissons from './components/Boissons/Boissons'
-import Sandwich from './components/Sandwich/Sandwich'
-import Desserts from './components/Desserts/Desserts'
+import Pates from './components/Pates'
+import Boissons from './components/Boissons'
+import Desserts from './components/Desserts'
+
+import Sandwich from './components/Sandwich'
 
 export default function Menu() {
   const pates_ = pates.map((pates, index) => {
@@ -21,19 +18,6 @@ export default function Menu() {
 
   const boissons_ = boissons.map((boissons, index) => {
     return <Boissons data={boissons} key={index} />
-  })
-
-  const viandes_ = viandes.map((viandes, index) => {
-    return <Sandwich data={viandes} key={index} />
-  })
-  const garnitures_ = garnitures.map((garnitures, index) => {
-    return <Sandwich data={garnitures} key={index} />
-  })
-  const sauces_ = sauces.map((sauces, index) => {
-    return <Sandwich data={sauces} key={index} />
-  })
-  const supplements_ = supplements.map((supplements, index) => {
-    return <Sandwich data={supplements} key={index} />
   })
 
   const dessertsLeft_ = dessertsLeft.map((dessertsLeft, index) => {
@@ -64,30 +48,7 @@ export default function Menu() {
         <h2 className='title'> Sandwichs à 4.50€ 🍔</h2>
 
         <div className='contentSandwich'>
-          <div className='divType'>
-            <h3>Viandes</h3>
-            <h4></h4>
-            {viandes_}
-          </div>
-
-          <div className='divType'>
-            <h3>Garnitures</h3>
-            <h4></h4>
-            {garnitures_}
-          </div>
-
-          <div className='divType'>
-            <h3>Sauces</h3>
-            <h4></h4>
-            {sauces_}
-          </div>
-
-          <div className='divType'>
-            <h3>Supplements</h3>
-            <h4></h4>
-            {supplements_}
-          </div>
-          
+          <Sandwich />
         </div>
       </div>
 
