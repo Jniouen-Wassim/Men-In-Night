@@ -3,8 +3,8 @@
     "english-language": "English",
     "italian-language": "italian",
     "welcome": "Welcome",
-    "switch-language": "Change of language",
+    "switch-language": "<1>Change of</1> <2>language</2>",
 
-    "button-1": "Menu",
-    "button-2": "Schedules & information"
+    "button1": "Menu",
+    "button2": "Schedules & information"
 }

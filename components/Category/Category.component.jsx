@@ -22,11 +22,11 @@ export default function Category(){
       <div className="allButton">   
         <button  onClick={() => setButton({ menuBtn: true, horaire_infoBtn: false })} 
         className={`btnCategory ${activeButton === button.menuBtn ? 'active' : ''}`}>
-          <div> {t('welcome')} </div>
+          <div> {t('button1')} </div>
         </button>
         <button  onClick={() => setButton({ menuBtn: false, horaire_infoBtn: true })} 
         className={`btnCategory ${activeButton === button.horaire_infoBtn ? 'active' : ''}`}>
-          <div> {t('welcome')} </div>
+          <div> {t('button2')} </div>
         </button>
       </div>
 
